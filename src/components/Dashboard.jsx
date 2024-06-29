@@ -18,7 +18,7 @@ const Dashboard = () => {
     if(!currUser)navigate('/login');
     userInfo();
     fetchTransactions();
-  }, [currUser]);
+  }, [currUser,userInfo,navigate]);
 
   const userInfo = async () => {
     try {

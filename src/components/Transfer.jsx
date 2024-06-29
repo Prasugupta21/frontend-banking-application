@@ -11,7 +11,7 @@ const Transfer = () => {
 
 
   
-  const [users, setUsers] = useState([]);
+
 const navigate=useNavigate();
   useEffect(() => {
     fetchUsers();
