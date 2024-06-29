@@ -18,7 +18,7 @@ const Dashboard = () => {
     if(!currUser)navigate('/login');
     userInfo();
     fetchTransactions();
-  }, []);
+  }, [currUser]);
 
   const userInfo = async () => {
     try {
@@ -47,10 +47,7 @@ const Dashboard = () => {
     }
   };
 
-  const handleLogout = () => {
-    // Logout logic here
-  };
-
+ 
   return (
     
       <>
