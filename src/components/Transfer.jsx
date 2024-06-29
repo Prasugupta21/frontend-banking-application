@@ -13,24 +13,8 @@ const Transfer = () => {
   
 
 const navigate=useNavigate();
-  useEffect(() => {
-    fetchUsers();
-  }, []);
-
-  const fetchUsers = async () => {
-    try {
-      const { data } = await axios.get('/users', {
-        
-      });
-      if (data.success) {
-        setUsers(data.users);
-      } else {
-        alert(data.message);
-      }
-    } catch (error) {
-      console.error('Fetch users error:', error);
-    }
-  };
+ 
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
